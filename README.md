@@ -1,43 +1,49 @@
-# Miles Storm — portfolio
+# Miles Storm — character sheet + recruiter portfolio
 
-A dependency-free personal portfolio for GitHub Pages. No paid fonts, subscriptions, tracking, server, or build step. All interactions run in the browser. Works at a user site or a project subpath.
+A buildless, dependency-free portfolio for GitHub Pages. HTML, CSS, and browser JavaScript only: no subscriptions, external fonts, analytics, form services, API keys, or paid hosting requirements.
 
-## Before publishing
+## Publish to the existing GitHub Pages repository
 
-1. In `script.js`, fill in `CONTACT.email` and/or `CONTACT.linkedin` with your public contact details. Leave either blank to omit it. The page honestly shows a launch note until one is set.
-2. Review the career claims in `index.html` and `resume.html`. They are drafted from supplied background, not an uploaded authoritative résumé. Verify exact credential names and dates. Add earlier job dates and education institutions if desired.
-3. References are on request. Add actual quotes or public names only after receiving permission. No quotes are invented.
-4. The résumé opens as an accessible HTML page; its Print / Save as PDF button uses the browser print dialog. It is not a pre-existing PDF attachment.
+1. Unzip `miles-storm-portfolio.zip` and open its folder.
+2. In your `youshouldhiremiles.github.io` GitHub repository, save a backup or use the existing commit history before replacing files.
+3. Choose **Add file → Upload files**. Upload the contents of the extracted folder to the repository root, replacing `index.html`, `style.css`, `script.js`, `resume.html`, and `README.md`. Do not upload the enclosing folder or ZIP. Include `.nojekyll` if visible; this plain static site also works without it.
+4. Commit to `main`.
+5. Open **Settings → Pages → Build and deployment**. Select **Deploy from a branch**, branch **main**, folder **/(root)**, then **Save**. If these are already selected, the new commit triggers deployment.
+6. Wait for GitHub's Pages deployment to finish, then visit https://youshouldhiremiles.github.io/. Refresh if a cached version appears.
+7. Check both view buttons on desktop and phone, open each work story, follow both contact links, and use **Résumé → Print / Save as PDF**.
 
-## Publish for $0 using GitHub’s website
+Official publishing-source instructions: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
 
-1. Sign in to GitHub or create a free account.
-2. Create a **public** repository named `YOURUSERNAME.github.io`, substituting your exact GitHub username. If that repository already exists, preserve its files and integrate these deliberately rather than overwriting it.
-3. Extract the ZIP. Use **Add file → Upload files**, then upload `index.html`, `style.css`, `script.js`, `resume.html`, and `.nojekyll` into the repository root (not inside another folder). Commit to `main`. The empty `.nojekyll` file is optional for this site if your file picker hides it.
-4. Open **Settings → Pages**. Under Build and deployment, select **Deploy from a branch**, `main`, and `/(root)`, then Save.
-5. GitHub shows the publishing URL when deployment finishes: `https://YOURUSERNAME.github.io/`.
-6. Check the page on your phone, try every interaction, verify your contact link, and print the résumé.
+For a project repository, relative links also work under `/repository-name/`. No build or package installation is needed. To undo a publication, revert the upload commit in GitHub.
 
-For a project repository named `portfolio`, the URL is `https://YOURUSERNAME.github.io/portfolio/`; all asset links here are relative and support that configuration.
+## Content provenance and review
 
-## Local preview
+Career details, dates, credentials, education, projects, pronouns, location, and personal interests are retained from the supplied repository. They have not been independently verified against an authoritative résumé. The original README explicitly described them as drafted background requiring review. Before publishing, confirm credential names and dates, education, job history, project scope, and approximate figures. Earlier role dates and education institutions were absent and have not been invented.
 
-Open `index.html` directly, or run `python3 -m http.server 8000` from this folder and visit `http://localhost:8000`.
+The original résumé's team metrics remain labeled as team/environment metrics. No new performance statistics, testimonials, availability claims, ratings, or employers have been added. The profile photo is the headshot supplied by Miles after the concept revision. It is resized and JPEG-compressed for the web, with no retouching or generative changes. The page uses a responsive CSS crop and a gold RPG / blue recruiter frame. The sidebar retains the MS monogram. Contact information is supplied in the current request: youshouldhiremiles@gmail.com and Google Voice (970) 658-9523. References remain available on request; no reference contact details are exposed.
 
-## Contents
+Updated using the two original concept images supplied after the first delivery. The layout now follows their sidebar, profile header, compact strengths grid, expertise, summary, achievements, and next-step panels. Dark RPG mode uses gold trim and parchment accents; recruiter mode uses blue dashboard panels. The images are design references, not factual sources: their portrait, numeric ability scores, 4,000+ user claim, 99%+ SLA claim, and unverified skills have not been copied. The original repository remains the source for career content. Decorative UI is CSS and text; the reference images are not embedded as page backgrounds.
 
-- `index.html`: introduction, four expandable project stories, capabilities, personal story, interactive troubleshooting, contact and references.
-- `style.css`: responsive layout, keyboard focus, reduced-motion support.
-- `script.js`: contact configuration, die-roll wisdom, troubleshooting choices.
-- `resume.html`: printable résumé with PDF export through the browser.
+## Features
 
-## Hosting scope
+- Character sheet: dark teal palette, gold trim, supplied headshot, character profile, six strengths, class features, parchment summary, work stories, personal background, and optional troubleshooting choices.
+- Recruiter mode: blue dashboard panels, cleaner typography, same factual content, no side quest. Preference is saved locally where browser settings allow.
+- Native expandable stories, semantic headings, skip link, visible keyboard focus, announced interaction feedback, responsive sidebar and mobile menu with Escape support, reduced-motion support.
+- Content and full navigation remain accessible without JavaScript. JavaScript enables the view controls and mobile collapsed navigation.
+- Printable HTML résumé with a browser Print / Save as PDF button; no invented downloadable PDF.
 
-This is a personal career/project portfolio, without checkout, prices, order collection, or a commercial application. GitHub Pages is not permitted for sites primarily facilitating commercial transactions or running an online business. Review GitHub’s rules if you later turn this into a storefront:
-https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits
+## Validation
 
-Publishing makes these files public. Keep confidential material and reference contact details out of the repository.
+Passed: JavaScript syntax; scripted interaction tests for both modes, button pressed states, blocked local storage, mobile menu open/close, Escape focus return, desktop resize, all three side-quest responses; HTML checks for duplicate IDs, internal anchors, local-file links, and missing linked assets.
 
-## Ownership
+Limit: automated interaction tests used a simulated DOM. The preview browser could not connect to the local server, so actual browser rendering, phone layouts, screen reader behavior, and printed page layout were not visually verified. Check these before launch. No claim of WCAG certification is made.
 
-Personal content belongs to Miles Storm. No third-party asset dependencies.
+## Editing
+
+Edit content in `index.html` and `resume.html`; styling in `style.css`; interactions in `script.js`. Save as plain text, not a rich-text HTML export (the original homepage had been converted by Cocoa HTML Writer). Open `index.html` locally for a quick review. If desired, run `python3 -m http.server 8000` in this folder and open http://localhost:8000.
+
+Personal content belongs to Miles Storm. No third-party visual assets are bundled.
+
+## Headshot
+
+`assets/miles-storm-headshot.jpg` is the optimized 800 × 800 version of the supplied image. Keep the `assets` folder beside `index.html` when uploading to GitHub. The same photo appears in both modes. To replace it later, save a new image at that path (or update the image path and dimensions in `index.html`). Adjust `object-position` on `.identity-art.portrait img` in `style.css` to reposition the visible crop. The original full-resolution file is not bundled.
