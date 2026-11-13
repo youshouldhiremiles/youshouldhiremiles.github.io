@@ -16,3 +16,470 @@ html[data-mode=recruiter]{--bg:#06131f;--paper:#0b2030;--ink:#f0f6fa;--muted:#b8
 .identity-art.portrait:after{display:block;content:'';position:absolute;inset:5px;width:auto;height:auto;border:1px solid var(--edge);transform:none;opacity:.8;pointer-events:none}
 @media(max-width:620px){.hero-grid{grid-template-columns:105px minmax(0,1fr)}}
 @media(max-width:370px){.hero-grid{grid-template-columns:1fr}.identity-art.portrait{max-width:160px}}
+
+/* Artwork palette: teal workspaces, charcoal shadows, amber lamplight. */
+@media screen{
+:root{--bg:#10191b;--paper:#172629;--ink:#f1eee5;--muted:#b7c6c4;--line:#3a4c4c;--accent:#e8b777;--edge:#9a7954;--glow:#d3924220;--panel:linear-gradient(135deg,#1a3032f2,#142022f7);--teal:#78c9c5;--amber:#e8b777}
+html[data-mode=recruiter]{--bg:#101b1d;--paper:#172a2c;--ink:#eff3ed;--muted:#b7c8c6;--line:#375454;--accent:#83d1cc;--edge:#4b8c89;--glow:#4abbb322;--panel:linear-gradient(135deg,#1b3336f2,#142326f7);--teal:#83d1cc;--amber:#e8b777}
+body{background:radial-gradient(ellipse at 95% 0,#9d63331c,transparent 38%),radial-gradient(ellipse at 0 45%,#2a868223,transparent 55%),var(--bg)}
+header,html[data-mode=recruiter] header{background:radial-gradient(ellipse at 0 0,#1b53524d,transparent 60%),linear-gradient(165deg,#152529,#101719);border-right:1px solid var(--line)}
+.brand{padding-top:35px;padding-bottom:35px}.seal{background:linear-gradient(145deg,#264645,#172224);box-shadow:0 0 24px var(--glow);border-color:var(--edge);color:var(--accent)}
+nav a{border-bottom-color:#53686533;color:var(--muted)}
+nav a:hover,nav a[aria-current=location]{background:linear-gradient(90deg,#38827c33,transparent);color:var(--ink);box-shadow:inset 3px 0 var(--accent)}
+nav a>span:first-child{color:var(--accent)}
+main{padding-top:25px}.mode-bar{margin-bottom:22px}.mode-controls{background:#0e181acc;border:1px solid var(--line);border-radius:30px;padding:4px;gap:3px}
+.mode-controls button{font:12px/1.5 system-ui,sans-serif;border:0;box-shadow:none;background:transparent;color:var(--muted);padding:7px 20px}
+.mode-controls button[aria-pressed=true]{background:#305453;color:var(--ink);box-shadow:0 2px 6px #0004;border-color:transparent}
+html[data-mode=character] .mode-controls button[aria-pressed=true]{background:#6c5032;color:#fff3df}
+.hero{padding-bottom:26px}.hero-grid{padding:26px;border:1px solid var(--line);background:var(--panel);border-radius:0 0 10px 10px;gap:24px;border-top:0;position:relative}
+.hero-copy>.eyebrow{font:10px/1.6 system-ui,sans-serif;letter-spacing:1.4px;color:var(--accent)}
+h1{font-size:clamp(37px,4vw,62px);color:var(--ink);margin-top:8px}.role-title{color:var(--ink)}.intro,html[data-mode=recruiter] .intro{color:var(--muted)}
+.identity-art.portrait{border-color:var(--edge);box-shadow:0 7px 20px #0005;border-radius:4px}.identity-art.portrait:after{border-color:var(--edge);opacity:.6}
+.sheet{background:linear-gradient(145deg,#27373577,#111c1f);border-color:var(--line);border-radius:6px}.sheet:before{display:none}.profile-title{font-size:23px}.sheet-top{color:var(--accent)}dl div{border-top-color:var(--line)}.sheet-note{border-color:var(--line)}
+.button{background:linear-gradient(135deg,#82603b,#654a2e);border:1px solid #c99a61;color:#fff3df;box-shadow:0 2px 6px #0003;border-radius:5px;padding:9px 14px}
+html[data-mode=recruiter] .button{background:linear-gradient(135deg,#326761,#254d4b);color:#eef9f4;border-color:#62a7a1}
+.text-link,.email{color:var(--accent)}.footnote{color:var(--muted)}
+.skill-strip{background:#13262866;border-color:var(--line);border-radius:5px;padding:13px 10px;color:var(--muted)}
+.overview-grid{gap:20px}.panel,html[data-mode=recruiter] .panel{border-color:var(--line);box-shadow:0 4px 14px #0003;background:var(--panel);border-radius:8px;padding:20px}
+.panel:before{display:none}.panel h2,html[data-mode=recruiter] .panel h2{border-color:var(--line);background:none;color:var(--accent);padding-bottom:12px}
+.panel-subtitle{color:var(--muted)}.ability-grid>div{background:radial-gradient(ellipse at 50% 0,#31504b80,#152527);border-color:var(--edge);outline-color:#9a795444;box-shadow:none}
+.ability-grid small{color:var(--accent)}.ability-grid strong{color:var(--ink)}.ability-grid span{color:var(--muted)}
+html[data-mode=recruiter] .ability-grid>div{background:linear-gradient(135deg,#2a4545,#1b3032);border-color:#456763}
+.competency-grid>div>span{color:var(--accent)}.competency-grid small{color:var(--muted)}.tool-tags{border-color:var(--line)}.tool-tags span{background:#0e1f2188;border:1px solid var(--line);color:var(--muted);border-radius:4px;padding:4px 8px}
+.backstory{background:linear-gradient(125deg,#bd9d70,#ddc39a);color:#29241d;border-color:#c5a16b}
+.backstory h2{color:#3d3020;border-color:#967950}.backstory p{color:#29241d}
+html[data-mode=recruiter] .backstory{background:linear-gradient(135deg,#29413c,#1a2f2f);border-color:#47645c;color:var(--ink)}html[data-mode=recruiter] .backstory h2{color:var(--amber);border-color:#47645c}html[data-mode=recruiter] .backstory p{color:#d2dcd3}
+.achievements li::marker{color:var(--accent)}.opportunities>a{background:linear-gradient(110deg,#2b444166,#142326);border-color:var(--line);border-radius:5px;padding:12px 14px}.opportunities>a:hover{border-color:var(--edge);background:#28413e}.opportunities strong{color:var(--ink)}.opportunities strong span{color:var(--accent)}
+.projects,.skill-grid article,.experience{border-color:var(--line);background:var(--panel);box-shadow:0 3px 12px #0002;border-radius:7px}details{border-color:var(--line)}summary h3{color:var(--ink)}summary:hover h3{color:var(--accent)}.detail{color:var(--muted)}
+.adventure{background:radial-gradient(ellipse at 0 0,#324136,#172628);border-color:var(--line);border-radius:7px}.choices button{background:linear-gradient(#2c413b,#1a2d2b);border-color:var(--edge);color:var(--ink)}.choices button[aria-pressed=true]{background:var(--amber);color:#20221b}
+.contact{background:radial-gradient(ellipse at 50% 100%,#a6743520,transparent 75%)}.contact h2 em{color:var(--amber)}footer{border-color:var(--line)}
+.technology-banner{margin:0;border:1px solid var(--line);background:#101b1d;border-radius:10px 10px 0 0;overflow:hidden;position:relative}
+.banner-image-link{display:block;line-height:0}.banner-image-link:focus-visible{outline-offset:-5px}
+.technology-banner img{display:block;width:100%;height:auto;aspect-ratio:2172/488}
+.technology-banner figcaption{background:linear-gradient(110deg,#173739,#272a22);border-top:1px solid #4c635e;padding:18px 24px;text-align:center}
+.banner-kicker{display:block;font:8px/1.6 system-ui,sans-serif;letter-spacing:2px;color:var(--teal);margin:0 0 7px}
+.technology-banner blockquote{font:italic 20px/1.5 Georgia,serif;color:#f1ddba;margin:0}
+.technology-banner figcaption p{font-size:9px;line-height:1.7;color:var(--muted);margin:8px 0 0}.technology-banner figcaption a{white-space:nowrap}
+@media(max-width:1150px){.hero-grid{padding:20px;gap:20px}.sheet{background:#13242688}}
+@media(max-width:850px){.hero-grid{padding:18px;gap:18px}.panel,html[data-mode=recruiter] .panel{padding:18px}.mode-controls{align-self:flex-start}}
+@media(max-width:620px){header{padding:15px 20px}.brand{padding:0}main{padding:18px 14px 0}.hero-grid{padding:18px 14px;gap:18px}.hero h1{font-size:37px}.mode-controls{width:100%;align-self:auto}.mode-controls button{padding:7px 14px}.mode-bar>.eyebrow{font-size:9px}.technology-banner figcaption{padding:15px 14px}.technology-banner blockquote{font-size:16px}.banner-kicker{font-size:7px;letter-spacing:1.3px}.technology-banner figcaption p{font-size:8px}.panel,html[data-mode=recruiter] .panel{padding:17px}.hero-copy>.eyebrow{font-size:8px;letter-spacing:1px}.role-title{font-size:14px}}
+}
+@media print{.technology-banner{margin:0 0 20px;break-inside:avoid}.technology-banner img{display:block;width:100%;height:auto}.technology-banner figcaption{text-align:center;padding:10px}.technology-banner blockquote{margin:0;font:italic 12pt Georgia,serif}.technology-banner figcaption p{font-size:8pt}.banner-kicker{display:none}}
+
+/* RPG character-sheet layout with the restored artwork palette. */
+@media screen{
+
+
+
+
+
+html[data-mode=character] .hero{display:flex;flex-direction:column;padding-bottom:20px}
+html[data-mode=character] .mode-bar{order:0;border-bottom:3px double var(--edge);padding-bottom:15px;margin-bottom:18px}
+html[data-mode=character] .mode-bar>.eyebrow{color:var(--ink);font-size:9px;letter-spacing:1.3px}
+html[data-mode=character] .mode-controls{background:#0e181acc;border-color:var(--line);box-shadow:none}
+html[data-mode=character] .mode-controls button{color:var(--muted)}html[data-mode=character] .mode-controls button[aria-pressed=true]{background:#6c5032;color:#fff3df;border-radius:20px;box-shadow:0 1px 4px #0003}
+html[data-mode=character] .hero-grid{order:2;background:var(--panel);border:1px solid var(--line);border-top:0;border-radius:0 0 10px 10px;padding:24px;grid-template-columns:135px minmax(0,1.5fr) minmax(210px,1fr);gap:22px;align-items:start}
+html[data-mode=character] .identity-art.portrait{border:2px solid var(--edge);box-shadow:3px 3px 0 var(--edge);border-radius:0}
+html[data-mode=character] .identity-art.portrait:after{border-color:var(--edge);inset:4px}
+html[data-mode=character] .hero-copy>.eyebrow{font:bold 9px/1.5 system-ui,sans-serif;letter-spacing:1.5px;color:var(--muted);margin-bottom:5px}
+html[data-mode=character] h1{font:small-caps 48px/1.08 Georgia,serif;color:var(--ink);border-bottom:2px solid var(--edge);padding-bottom:5px;margin-top:0;margin-bottom:8px;letter-spacing:-1px}
+html[data-mode=character] .role-title{font:small-caps 16px/1.4 Georgia,serif;letter-spacing:.4px;color:var(--ink);margin-bottom:10px}
+html[data-mode=character] .intro{font:italic 13px/1.5 Georgia,serif;color:var(--muted)}
+html[data-mode=character] .actions{margin:12px 0;gap:15px}html[data-mode=character] .button{background:#82603b;border-color:#c99a61;color:#fff3df;font-size:10px;border-radius:0;padding:7px 11px;box-shadow:none}
+html[data-mode=character] .text-link{color:var(--accent)}html[data-mode=character] .footnote{font-size:8px;color:var(--muted)}
+html[data-mode=character] .record-fields{display:grid;grid-template-columns:1fr 1fr;gap:10px 15px;margin:15px 0 0}
+html[data-mode=character] .record-fields>div{display:flex;flex-direction:column-reverse;gap:3px;padding:0;border:0}
+html[data-mode=character] .record-fields dt{font:bold 7px/1.5 system-ui,sans-serif;letter-spacing:1px;text-transform:uppercase;color:var(--muted)}
+html[data-mode=character] .record-fields dd{font:12px/1.4 Georgia,serif;text-align:left;margin:0;padding-bottom:4px;border-bottom:1px solid var(--line);color:var(--ink)}
+html[data-mode=character] .sheet{padding:12px;background:#17292b;border:1px solid var(--line);outline:1px solid var(--edge);outline-offset:-5px;border-radius:0;display:block}
+html[data-mode=character] .sheet-top .eyebrow{font-size:7px;color:var(--muted)}html[data-mode=character] .sheet-top>span:last-child{color:var(--accent)}
+html[data-mode=character] .profile-title{font:small-caps 22px Georgia,serif;color:var(--accent);border-bottom:1px solid var(--line);padding-bottom:7px;margin-bottom:7px}
+html[data-mode=character] .class-title{color:var(--muted);font-size:9px}
+html[data-mode=character] .sheet dl>div{grid-template-columns:65px minmax(0,1fr);font-size:9px;border-color:var(--line);gap:6px;padding:6px 0}html[data-mode=character] .sheet dt{color:var(--muted);font-weight:650}html[data-mode=character] .sheet dd{color:var(--ink)}
+html[data-mode=character] .sheet-note{border-color:var(--line)}html[data-mode=character] .sheet-note>span{font-size:7px;color:var(--muted)}html[data-mode=character] .sheet-note p{font:italic 12px/1.4 Georgia,serif;color:var(--ink)}
+
+
+
+
+html[data-mode=character] .skill-strip{background:#17292b;border-top:3px double var(--line);border-bottom:3px double var(--line);color:var(--ink);border-radius:0;font-size:8px;letter-spacing:.5px;padding:9px;margin-bottom:20px}
+html[data-mode=character] .overview-grid{grid-template-columns:minmax(240px,.85fr) minmax(0,1.15fr);gap:17px}
+html[data-mode=character] .panel{border:1px solid var(--line);outline:1px solid var(--line);outline-offset:-4px;border-radius:0;background:#1a3032;box-shadow:none;padding:12px 14px}
+html[data-mode=character] .panel h2{font:small-caps bold 20px/1.2 Georgia,serif;letter-spacing:.5px;display:flex;gap:8px;align-items:center;margin:-12px -14px 12px;padding:9px 14px;background:#304b46;color:#f1eee5;border:0;border-radius:0}
+html[data-mode=character] .panel h2>span[aria-hidden]{font-size:18px}
+html[data-mode=character] .panel-subtitle{font:7px/1.5 system-ui,sans-serif;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin:0 0 9px}
+html[data-mode=character] .strengths{grid-row:span 2}
+html[data-mode=character] .ability-grid{grid-template-columns:1fr;gap:7px}
+html[data-mode=character] .ability-grid>div{display:grid;grid-template-columns:46px minmax(65px,1fr) minmax(0,1fr);gap:8px;align-items:stretch;text-align:left;min-height:44px;padding:0;background:transparent;border:0;outline:0;clip-path:none}
+html[data-mode=character] .ability-grid small{display:grid;place-items:center;font:bold 16px Georgia,serif;color:#f1eee5;background:#304b46;border:1px solid #304b46}
+html[data-mode=character] .ability-grid strong{display:flex;align-items:center;font:15px/1.3 Georgia,serif;color:var(--ink);border:1px solid var(--line);background:#17292b;padding:6px;margin:0;overflow-wrap:anywhere}
+html[data-mode=character] .ability-grid>div>span{display:flex;align-items:center;font:9px/1.35 system-ui,sans-serif;color:var(--muted);padding:6px 0;border-bottom:1px solid var(--line);max-width:none;margin:0}
+html[data-mode=character] .ability-grid small .mode-character{display:block}
+html[data-mode=character] .competency-grid{grid-template-columns:1fr 1fr;text-align:left;gap:0 17px}
+html[data-mode=character] .competency-grid>div{position:relative;padding:9px 4px 9px 17px;border-bottom:1px solid var(--line);font:11px/1.4 Georgia,serif;color:var(--ink)}
+html[data-mode=character] .competency-grid>div:before{content:'◆';position:absolute;left:0;top:9px;font:9px/1.4 Georgia,serif;color:var(--accent)}
+html[data-mode=character] .competency-grid>div>span{display:none}html[data-mode=character] .competency-grid small{font:8px/1.5 system-ui,sans-serif;color:var(--muted)}
+html[data-mode=character] .tool-tags{border:0;padding-top:8px;margin-top:7px;gap:5px}
+html[data-mode=character] .tool-tags span{background:#17292b;border-color:var(--line);color:var(--muted);border-radius:0;font-size:8px;padding:3px 6px}
+html[data-mode=character] .backstory{background:#17292b;border-color:var(--line);color:var(--ink)}
+html[data-mode=character] .backstory p{font:12px/1.65 Georgia,serif;color:var(--ink)}html[data-mode=character] .backstory p:last-child{margin-bottom:0}
+html[data-mode=character] .achievements li{font:12px/1.6 Georgia,serif;color:var(--ink);padding-bottom:7px;border-bottom:1px solid var(--line)}html[data-mode=character] .achievements li:last-child{border-bottom:0}
+html[data-mode=character] .achievements li::marker{color:var(--accent);content:'◆  '}
+html[data-mode=character] .opportunities>a{border:0;border-bottom:1px solid var(--line);border-radius:0;background:transparent;padding:10px 0;margin:0}
+html[data-mode=character] .opportunities>a:last-child{border:0}html[data-mode=character] .opportunities>a:hover{background:#17292b}
+html[data-mode=character] .opportunities strong{font:15px Georgia,serif;color:var(--ink)}html[data-mode=character] .opportunities small{font-size:9px;color:var(--muted)}
+html[data-mode=character] h2{color:var(--ink);font-variant:small-caps}html[data-mode=character] em{color:var(--accent)}
+html[data-mode=character] main>section:not(.hero):not(.overview){border-top:3px double var(--line);padding-top:28px;padding-bottom:28px}
+html[data-mode=character] .projects{border:1px solid var(--line);background:#1a3032;border-radius:0;box-shadow:none}
+html[data-mode=character] details{border-color:var(--line)}html[data-mode=character] summary h3{color:var(--ink);font:20px/1.3 Georgia,serif}html[data-mode=character] summary small{color:var(--muted)}
+html[data-mode=character] .detail{color:var(--muted);font:13px/1.7 Georgia,serif}html[data-mode=character] .detail .tags{color:var(--accent)}
+html[data-mode=character] .skill-grid{gap:15px}html[data-mode=character] .skill-grid article{border:1px solid var(--line);border-radius:0;background:#17292b;box-shadow:none;padding:16px}
+html[data-mode=character] .skill-grid h3{font:small-caps 20px/1.3 Georgia,serif;color:var(--ink)}html[data-mode=character] .skill-grid p{font:12px/1.7 Georgia,serif;color:var(--muted)}html[data-mode=character] .icon{color:var(--accent)}
+html[data-mode=character] .experience{border:1px solid var(--line);background:#1a3032;border-radius:0;box-shadow:none}
+html[data-mode=character] .experience h3{color:var(--ink)}html[data-mode=character] .experience p,html[data-mode=character] .about p{color:var(--muted)}
+html[data-mode=character] .about .pullquote{color:var(--accent)}html[data-mode=character] .adventure{border:1px solid var(--line);border-radius:0;background:repeating-linear-gradient(0deg,transparent 0 27px,#e8b77708 27px 28px),#17292b}
+html[data-mode=character] .choices button{background:#1a3032;border-color:var(--line);color:var(--ink);border-radius:0}html[data-mode=character] .choices button[aria-pressed=true]{background:#304b46;color:#f1eee5}
+html[data-mode=character] .contact{background:transparent}html[data-mode=character] .contact p{color:var(--muted)}html[data-mode=character] .contact h2 em{color:var(--accent)}
+
+@media(max-width:1150px){html[data-mode=character] .hero-grid{grid-template-columns:115px minmax(0,1fr)}html[data-mode=character] .sheet{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:0 20px}html[data-mode=character] .sheet dl{grid-column:2;grid-row:1/5}html[data-mode=character] .profile-title,html[data-mode=character] .class-title,html[data-mode=character] .sheet-top,html[data-mode=character] .sheet-note{grid-column:1}html[data-mode=character] .overview-grid{grid-template-columns:minmax(215px,.9fr) minmax(0,1.1fr)}html[data-mode=character] .ability-grid>div{grid-template-columns:40px minmax(65px,1fr);gap:0 7px}html[data-mode=character] .ability-grid>div>span{grid-column:2;padding:4px 0 6px}html[data-mode=character] .ability-grid small{grid-row:span 2}html[data-mode=character] .ability-grid strong{font-size:14px}}
+@media(max-width:850px){html[data-mode=character] .overview-grid{grid-template-columns:1fr}html[data-mode=character] .strengths{grid-row:auto}html[data-mode=character] .ability-grid{grid-template-columns:1fr 1fr;gap:10px 15px}html[data-mode=character] h1{font-size:39px}html[data-mode=character] .record-fields{gap:8px 12px}html[data-mode=character] .record-fields dd{font-size:11px}}
+@media(max-width:620px){html[data-mode=character] .hero-grid{grid-template-columns:90px minmax(0,1fr);gap:15px}html[data-mode=character] h1{font-size:33px}html[data-mode=character] .hero-copy>.eyebrow{font-size:7px;letter-spacing:.6px}html[data-mode=character] .role-title{font-size:14px}html[data-mode=character] .record-fields{grid-template-columns:1fr}html[data-mode=character] .hero-copy .intro{font-size:12px}html[data-mode=character] .sheet{grid-template-columns:1fr;gap:0}html[data-mode=character] .sheet dl,html[data-mode=character] .profile-title,html[data-mode=character] .class-title,html[data-mode=character] .sheet-top,html[data-mode=character] .sheet-note{grid-column:auto;grid-row:auto}html[data-mode=character] .ability-grid{gap:10px}html[data-mode=character] .ability-grid>div{grid-template-columns:34px minmax(0,1fr);gap:0 5px}html[data-mode=character] .ability-grid small{font-size:14px}html[data-mode=character] .ability-grid strong{font-size:13px;padding:5px}html[data-mode=character] .ability-grid>div>span{font-size:8px}html[data-mode=character] .panel h2{font-size:19px}html[data-mode=character] .mode-bar>.eyebrow{font-size:8px}}
+@media(max-width:370px){html[data-mode=character] .hero-grid{grid-template-columns:1fr}html[data-mode=character] .record-fields{grid-template-columns:1fr 1fr}html[data-mode=character] .record-fields dd{text-align:left}html[data-mode=character] .competency-grid{grid-template-columns:1fr}html[data-mode=character] .ability-grid{grid-template-columns:1fr}html[data-mode=character] .ability-grid>div{grid-template-columns:40px minmax(0,1fr) minmax(0,1fr)}html[data-mode=character] .ability-grid small{grid-row:auto}html[data-mode=character] .ability-grid>div>span{grid-column:auto}}
+}
+
+@media screen{html[data-mode=character] .technology-banner{order:1}@media(max-width:850px){html[data-mode=character] .hero-grid{padding:18px}}@media(max-width:620px){html[data-mode=character] .hero-grid{padding:18px 14px}}}
+
+/* Recruiter profile follows the RPG profile geometry and type scale. */
+@media screen{html[data-mode=recruiter] .hero{display:flex;flex-direction:column;padding-bottom:20px}
+html[data-mode=recruiter] .mode-bar{order:0;border-bottom:3px double var(--edge);padding-bottom:15px;margin-bottom:18px}
+html[data-mode=recruiter] .mode-bar>.eyebrow{color:var(--ink);font-size:9px;letter-spacing:1.3px}
+html[data-mode=recruiter] .mode-controls{background:#0e181acc;border-color:var(--line);box-shadow:none}
+html[data-mode=recruiter] .mode-controls button{color:var(--muted)}
+html[data-mode=recruiter] .mode-controls button[aria-pressed=true]{background:#6c5032;color:#fff3df;border-radius:20px;box-shadow:0 1px 4px #0003}
+html[data-mode=recruiter] .hero-grid{order:2;background:var(--panel);border:1px solid var(--line);border-top:0;border-radius:0 0 10px 10px;padding:24px;grid-template-columns:135px minmax(0,1.5fr) minmax(210px,1fr);gap:22px;align-items:start}
+html[data-mode=recruiter] .identity-art.portrait{border:2px solid var(--edge);box-shadow:3px 3px 0 var(--edge);border-radius:0}
+html[data-mode=recruiter] .identity-art.portrait:after{border-color:var(--edge);inset:4px}
+html[data-mode=recruiter] .hero-copy>.eyebrow{font:bold 9px/1.5 system-ui,sans-serif;letter-spacing:1.5px;color:var(--muted);margin-bottom:5px}
+html[data-mode=recruiter] h1{font:small-caps 48px/1.08 Georgia,serif;color:var(--ink);border-bottom:2px solid var(--edge);padding-bottom:5px;margin-top:0;margin-bottom:8px;letter-spacing:-1px}
+html[data-mode=recruiter] .role-title{font:small-caps 16px/1.4 Georgia,serif;letter-spacing:.4px;color:var(--ink);margin-bottom:10px}
+html[data-mode=recruiter] .intro{font:italic 13px/1.5 Georgia,serif;color:var(--muted)}
+html[data-mode=recruiter] .actions{margin:12px 0;gap:15px}
+html[data-mode=recruiter] .button{background:#82603b;border-color:#c99a61;color:#fff3df;font-size:10px;border-radius:0;padding:7px 11px;box-shadow:none}
+html[data-mode=recruiter] .text-link{color:var(--accent)}
+html[data-mode=recruiter] .footnote{font-size:8px;color:var(--muted)}
+html[data-mode=recruiter] .record-fields{display:grid;grid-template-columns:1fr 1fr;gap:10px 15px;margin:15px 0 0}
+html[data-mode=recruiter] .record-fields>div{display:flex;flex-direction:column-reverse;gap:3px;padding:0;border:0}
+html[data-mode=recruiter] .record-fields dt{font:bold 7px/1.5 system-ui,sans-serif;letter-spacing:1px;text-transform:uppercase;color:var(--muted)}
+html[data-mode=recruiter] .record-fields dd{font:12px/1.4 Georgia,serif;text-align:left;margin:0;padding-bottom:4px;border-bottom:1px solid var(--line);color:var(--ink)}
+html[data-mode=recruiter] .sheet{padding:12px;background:#17292b;border:1px solid var(--line);outline:1px solid var(--edge);outline-offset:-5px;border-radius:0;display:block}
+html[data-mode=recruiter] .sheet-top .eyebrow{font-size:7px;color:var(--muted)}
+html[data-mode=recruiter] .sheet-top>span:last-child{color:var(--accent)}
+html[data-mode=recruiter] .profile-title{font:small-caps 22px Georgia,serif;color:var(--accent);border-bottom:1px solid var(--line);padding-bottom:7px;margin-bottom:7px}
+html[data-mode=recruiter] .class-title{color:var(--muted);font-size:9px}
+html[data-mode=recruiter] .sheet dl>div{grid-template-columns:65px minmax(0,1fr);font-size:9px;border-color:var(--line);gap:6px;padding:6px 0}
+html[data-mode=recruiter] .sheet dt{color:var(--muted);font-weight:650}
+html[data-mode=recruiter] .sheet dd{color:var(--ink)}
+html[data-mode=recruiter] .sheet-note{border-color:var(--line)}
+html[data-mode=recruiter] .sheet-note>span{font-size:7px;color:var(--muted)}
+html[data-mode=recruiter] .sheet-note p{font:italic 12px/1.4 Georgia,serif;color:var(--ink)}
+@media(max-width:1150px){html[data-mode=recruiter] .hero-grid{grid-template-columns:115px minmax(0,1fr)}
+html[data-mode=recruiter] .sheet{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:0 20px}
+html[data-mode=recruiter] .sheet dl{grid-column:2;grid-row:1/5}
+html[data-mode=recruiter] .profile-title,html[data-mode=recruiter] .class-title,html[data-mode=recruiter] .sheet-top,html[data-mode=recruiter] .sheet-note{grid-column:1}}
+@media(max-width:850px){html[data-mode=recruiter] h1{font-size:39px}
+html[data-mode=recruiter] .record-fields{gap:8px 12px}
+html[data-mode=recruiter] .record-fields dd{font-size:11px}}
+@media(max-width:620px){html[data-mode=recruiter] .hero-grid{grid-template-columns:90px minmax(0,1fr);gap:15px}
+html[data-mode=recruiter] h1{font-size:33px}
+html[data-mode=recruiter] .hero-copy>.eyebrow{font-size:7px;letter-spacing:.6px}
+html[data-mode=recruiter] .role-title{font-size:14px}
+html[data-mode=recruiter] .record-fields{grid-template-columns:1fr}
+html[data-mode=recruiter] .hero-copy .intro{font-size:12px}
+html[data-mode=recruiter] .sheet{grid-template-columns:1fr;gap:0}
+html[data-mode=recruiter] .sheet dl,html[data-mode=recruiter] .profile-title,html[data-mode=recruiter] .class-title,html[data-mode=recruiter] .sheet-top,html[data-mode=recruiter] .sheet-note{grid-column:auto;grid-row:auto}
+html[data-mode=recruiter] .mode-bar>.eyebrow{font-size:8px}}
+@media(max-width:370px){html[data-mode=recruiter] .hero-grid{grid-template-columns:1fr}
+html[data-mode=recruiter] .record-fields{grid-template-columns:1fr 1fr}
+html[data-mode=recruiter] .record-fields dd{text-align:left}}}
+@media screen{html[data-mode=recruiter] .technology-banner{order:1}
+@media(max-width:850px){html[data-mode=recruiter] .hero-grid{padding:18px}}
+@media(max-width:620px){html[data-mode=recruiter] .hero-grid{padding:18px 14px}}}
+@media screen{
+html[data-mode=recruiter] .record-fields{display:grid}
+html[data-mode=recruiter] .class-title,html[data-mode=character] .class-title{min-height:2.8em}
+html[data-mode=recruiter] nav a{font-size:15px;line-height:1.3}
+html[data-mode=recruiter] h2{font-size:32px;line-height:1.2}
+html[data-mode=recruiter] h3{font-size:22px;line-height:1.3}
+html[data-mode=recruiter] .panel h2{font-size:20px;line-height:1.2}
+html[data-mode=recruiter] .panel h2>span[aria-hidden]{font-size:18px}
+html[data-mode=recruiter] .skill-grid h3{font-size:20px;line-height:1.3}
+html[data-mode=recruiter] summary h3{font-size:20px;line-height:1.3}
+html[data-mode=recruiter] .experience h3{font-size:23px}
+html[data-mode=recruiter] .opportunities strong{font-size:15px}
+html[data-mode=recruiter] .backstory p{font-size:12px;line-height:1.65}
+html[data-mode=recruiter] .achievements li{font-size:12px;line-height:1.6}
+html[data-mode=recruiter] .skill-grid p{font-size:12px;line-height:1.7}
+html[data-mode=recruiter] .detail{font-size:13px;line-height:1.7}
+@media(max-width:1150px){html[data-mode=recruiter] nav a{font-size:13px}}
+@media(max-width:850px){html[data-mode=recruiter] nav a{font-size:12px}html[data-mode=recruiter] .experience h3{font-size:21px}}
+@media(max-width:620px){html[data-mode=recruiter] nav a{font-size:13px}html[data-mode=recruiter] h2{font-size:28px}html[data-mode=recruiter] .contact h2{font-size:29px}html[data-mode=recruiter] .panel h2{font-size:19px}}
+}
+
+/* Gold light chases the switcher's outline without moving the controls. */
+@property --mode-gold-angle{syntax:'<angle>';initial-value:0deg;inherits:false}
+@property --mode-spark-angle{syntax:'<angle>';initial-value:0deg;inherits:false}
+@keyframes mode-gold-chase{to{--mode-gold-angle:360deg}}
+@keyframes mode-gold-sparkles{to{--mode-spark-angle:-360deg}}
+@media screen{
+html[data-mode] .mode-controls{position:relative;isolation:isolate;border:1px solid #b58a43;border-radius:999px;background:#101c1e;box-shadow:0 0 0 1px #d9ac4922,0 0 16px #d6a13d33}
+html[data-mode] .mode-controls>button{position:relative;z-index:1}
+@supports (background:conic-gradient(from 0deg,#a47729,#fff0b0)) and ((mask-composite:exclude) or (-webkit-mask-composite:xor)){
+html[data-mode] .mode-controls::before,html[data-mode] .mode-controls::after{content:'';position:absolute;inset:-2px;border-radius:inherit;padding:2px;pointer-events:none;z-index:0;-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude}
+html[data-mode] .mode-controls::before{background:conic-gradient(from var(--mode-gold-angle),#926220 0deg,#d6a64b 35deg,#fff1b1 51deg,#fffcef 55deg,#edc665 63deg,#9d702a 100deg,#684a23 150deg,#b08232 195deg,#ffe6a0 226deg,#fff9dc 232deg,#c3953c 243deg,#775223 290deg,#926220 360deg);animation:mode-gold-chase 5.5s linear infinite}
+html[data-mode] .mode-controls::after{background:conic-gradient(from var(--mode-spark-angle),transparent 0deg 17deg,#fff9dd 18deg 19deg,transparent 20deg 84deg,#ffe8a1 85deg 86deg,transparent 87deg 151deg,#fffdf2 152deg 154deg,transparent 155deg 224deg,#ffe6a0 225deg 226deg,transparent 227deg 302deg,#fffdf2 303deg 305deg,transparent 306deg 360deg);animation:mode-gold-sparkles 8s linear infinite;opacity:.85}
+}
+@media(prefers-reduced-motion:reduce){html[data-mode] .mode-controls::before,html[data-mode] .mode-controls::after{animation:none!important}html[data-mode] .mode-controls::after{opacity:.4}}
+@media(forced-colors:active){html[data-mode] .mode-controls{border:2px solid ButtonText;box-shadow:none}html[data-mode] .mode-controls::before,html[data-mode] .mode-controls::after{display:none}}
+}
+
+/* Coordinate the selected recruiter button with its teal page palette. */
+@media screen{
+html[data-mode=recruiter] .mode-controls button[data-view=recruiter][aria-pressed=true]{background:linear-gradient(135deg,#326761,#254d4b);color:#eef9f4;box-shadow:inset 0 0 0 1px #62a7a1,0 1px 4px #0003}
+@media(forced-colors:active){html[data-mode=recruiter] .mode-controls button[data-view=recruiter][aria-pressed=true]{background:Highlight;color:HighlightText;box-shadow:none}}
+}
+
+/* One shared thumb slides between the two equal-size mode targets. */
+@media screen{
+html[data-mode] .mode-controls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;padding:4px;width:280px;max-width:100%}
+html[data-mode] .mode-controls .mode-indicator{display:block;position:absolute;top:4px;bottom:4px;left:4px;width:calc(50% - 4px);border-radius:999px;background:linear-gradient(135deg,#82603b,#654a2e);box-shadow:inset 0 0 0 1px #c99a61,0 2px 5px #0005;pointer-events:none;z-index:0;transform:translateX(0);transition:transform 420ms cubic-bezier(.22,.75,.2,1)}
+html[data-mode] .mode-controls .mode-indicator::after{content:'';position:absolute;inset:0;border-radius:inherit;background:linear-gradient(135deg,#326761,#254d4b);box-shadow:inset 0 0 0 1px #62a7a1;opacity:0;transition:opacity 350ms ease}
+html[data-mode=recruiter] .mode-controls .mode-indicator{transform:translateX(0)}
+html[data-mode=character] .mode-controls .mode-indicator{transform:translateX(100%)}
+html[data-mode=recruiter] .mode-controls .mode-indicator::after{opacity:1}
+html[data-mode] .mode-controls button[data-view][aria-pressed]{background:transparent;box-shadow:none;border:0;border-radius:999px;color:var(--muted);padding:8px 12px;white-space:nowrap}
+html[data-mode] .mode-controls button[data-view][aria-pressed=true]{color:#fff3df}
+html[data-mode] .mode-controls::before,html[data-mode] .mode-controls::after{z-index:2}
+@media(max-width:620px){html[data-mode] .mode-controls{width:100%}}
+@media(prefers-reduced-motion:reduce){html[data-mode] .mode-controls .mode-indicator,html[data-mode] .mode-controls .mode-indicator::after{transition:none}}
+@media(forced-colors:active){html[data-mode] .mode-controls .mode-indicator{background:Highlight;box-shadow:none}html[data-mode] .mode-controls .mode-indicator::after{display:none}html[data-mode] .mode-controls button[data-view][aria-pressed]{color:ButtonText}html[data-mode] .mode-controls button[data-view][aria-pressed=true]{color:HighlightText}}
+}
+
+/* Amber details distinguish the RPG record from the teal recruiter dashboard. */
+@media screen{
+html[data-mode=character]{--line:#756044;--edge:#b88a50;--accent:#e8b777}
+html[data-mode=character] .panel{border-color:#927046;outline-color:#a17e493d}
+html[data-mode=character] .panel h2{background:linear-gradient(110deg,#4e3c29,#273b36);color:#f0c58c;box-shadow:inset 0 -1px #bd905555}
+html[data-mode=character] .panel h2>span[aria-hidden],html[data-mode=character] .icon,html[data-mode=character] .number,html[data-mode=character] .plus{color:#e8b777}
+html[data-mode=character] h2,html[data-mode=character] .profile-title,html[data-mode=character] summary h3,html[data-mode=character] .skill-grid h3,html[data-mode=character] .experience h3{color:#e8b777}
+html[data-mode=character] .ability-grid small{color:#f8d9ac;background:linear-gradient(135deg,#735333,#493b2b);border-color:#ac814c;box-shadow:inset 0 0 0 2px #17292b66}
+html[data-mode=character] .ability-grid strong{border-color:#9b7849;background:linear-gradient(110deg,#57442b33,#17292b)}
+html[data-mode=character] .record-fields dt,html[data-mode=character] .sheet dt,html[data-mode=character] .sheet-note>span,html[data-mode=character] .hero-copy>.eyebrow{color:#d9b583}
+html[data-mode=character] .tool-tags span{border-color:#8a6c43;color:#e2c39a;background:#3e322633}
+html[data-mode=character] .skill-strip{border-color:#957346;color:#e1c39b;background:linear-gradient(90deg,#55402a22,#17292b,#55402a22)}
+html[data-mode=character] .projects,html[data-mode=character] .skill-grid article,html[data-mode=character] .experience,html[data-mode=character] .adventure{border-color:#927046}
+html[data-mode=character] .text-link,html[data-mode=character] .email,html[data-mode=character] .opportunities strong span,html[data-mode=character] .competency-grid>div:before{color:#e8b777}
+html[data-mode=character] .opportunities>a:hover{background:#9c71351a}
+html[data-mode=character] .choices button[aria-pressed=true]{background:#82603b;color:#fff3df;border-color:#c99a61}
+html[data-mode=character] a:hover{ text-decoration-color:#e8b777}
+@media(forced-colors:active){html[data-mode=character] .panel h2,html[data-mode=character] .ability-grid small{background:Canvas;color:CanvasText;box-shadow:none}}
+}
+
+/* Stationary arcane linework behind the scrolling RPG record. */
+.rune-layer{display:none}
+@media screen{
+html[data-mode=character] body{isolation:isolate}
+html[data-mode=character] .rune-layer{display:block;position:fixed;inset:0 0 0 var(--sidebar);z-index:0;pointer-events:none;user-select:none;background-image:url('assets/arcane-runes.svg');background-repeat:repeat;background-size:720px 880px;background-position:40px 35px;opacity:.19;-webkit-mask-image:linear-gradient(180deg,transparent,#000 12%,#000 88%,transparent);mask-image:linear-gradient(180deg,transparent,#000 12%,#000 88%,transparent)}
+html[data-mode=character] main,html[data-mode=character] footer{position:relative;z-index:1}
+@media(max-width:620px){html[data-mode=character] .rune-layer{left:0;background-size:500px auto;background-position:center 60px;opacity:.15}}
+@media(forced-colors:active){html[data-mode=character] .rune-layer{display:none}}
+}
+
+/* Business typography only inside the Recruiter profile, below the artwork/quote. */
+@media screen{
+html[data-mode=recruiter] .hero-grid{--profile-font:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+html[data-mode=recruiter] .hero-grid h1,
+html[data-mode=recruiter] .hero-grid .role-title,
+html[data-mode=recruiter] .hero-grid .intro,
+html[data-mode=recruiter] .hero-grid .profile-title,
+html[data-mode=recruiter] .hero-grid .record-fields dd,
+html[data-mode=recruiter] .hero-grid .sheet-note p{font-family:var(--profile-font);font-variant:normal;font-style:normal}
+html[data-mode=recruiter] .hero-grid h1{font-weight:600}
+html[data-mode=recruiter] .hero-grid .role-title{font-weight:500}
+html[data-mode=recruiter] .hero-grid .intro{font-weight:400}
+html[data-mode=recruiter] .hero-grid .profile-title{font-weight:600;letter-spacing:0}
+html[data-mode=recruiter] .hero-grid .record-fields dd{font-weight:500}
+html[data-mode=recruiter] .hero-grid .sheet-note p{font-weight:400}
+}
+
+/* Matched transparent logo canvases keep the brand aligned in either mode. */
+@media screen{
+html[data-mode] .brand .brand-mark{width:min(180px,calc(var(--sidebar) - 24px));height:auto;aspect-ratio:1;max-width:100%;object-fit:contain;flex-shrink:0;background:transparent;border:0;box-shadow:none}
+@media(max-width:620px){html[data-mode] .brand .brand-mark{width:64px}}
+@media(max-width:370px){html[data-mode] .brand .brand-mark{width:52px}}
+}
+
+/* A terminal caret blinks after the transparent Recruiter monogram. */
+@keyframes terminal-caret-blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+@media screen{
+html[data-mode=recruiter] .brand .terminal-logo{display:block;position:relative;width:min(180px,calc(var(--sidebar) - 24px));aspect-ratio:1;flex-shrink:0;line-height:0}
+html[data-mode=recruiter] .brand .terminal-logo .brand-mark{display:block;width:100%;height:100%}
+html[data-mode=recruiter] .terminal-cursor{position:absolute;left:85%;top:43%;width:2.5%;height:15%;border-radius:1px;background:#83d1cc;box-shadow:0 2px 3px #0006;pointer-events:none;animation:terminal-caret-blink 1.2s step-end infinite}
+@media(max-width:620px){html[data-mode=recruiter] .brand .terminal-logo{width:64px}}
+@media(max-width:370px){html[data-mode=recruiter] .brand .terminal-logo{width:52px}}
+@media(prefers-reduced-motion:reduce){html[data-mode=recruiter] .terminal-cursor{animation:none}}
+@media(forced-colors:active){html[data-mode=recruiter] .terminal-cursor{background:CanvasText;box-shadow:none}}
+}
+
+/* Slow continuous gold flow, with broad highlights and subdued glints. */
+@media screen{
+html[data-mode] .mode-controls::before{background:conic-gradient(from var(--mode-gold-angle),#8b672f 0deg,#bb914c 55deg,#e4c58a 105deg,#bb9554 155deg,#80602f 205deg,#b08b48 260deg,#dcc08a 310deg,#8b672f 360deg);animation:mode-gold-chase 60s linear infinite}
+html[data-mode] .mode-controls::after{background:conic-gradient(from var(--mode-spark-angle),transparent 0deg,#f0d9aa55 75deg,transparent 150deg,transparent 200deg,#e8c98a44 275deg,transparent 360deg);animation:mode-gold-sparkles 90s linear infinite;opacity:.35}
+@media(prefers-reduced-motion:reduce){html[data-mode] .mode-controls::before,html[data-mode] .mode-controls::after{animation:none!important}}
+}
+
+/* Two separated gold arcs, rather than a fully illuminated perimeter. */
+@media screen{
+html[data-mode] .mode-controls{border-color:#37504e;box-shadow:0 2px 8px #0003}
+html[data-mode] .mode-controls::before{background:conic-gradient(from var(--mode-gold-angle),transparent 0deg,#9b783d88 7deg,#dfbf80 18deg,#b38b4788 29deg,transparent 36deg,transparent 180deg,#9b783d88 187deg,#dfbf80 198deg,#b38b4788 209deg,transparent 216deg,transparent 360deg);animation:mode-gold-chase 5s linear infinite}
+html[data-mode] .mode-controls::after{display:none}
+@media(forced-colors:active){html[data-mode] .mode-controls{border-color:ButtonText;box-shadow:none}}
+}
+
+/* Approved etched-metal sequence: spin, hold the gold face, fade to the normal logo. */
+@keyframes rpg-d20-metal-spin{
+0%,6.6667%{transform:perspective(600px) rotateY(0deg);animation-timing-function:cubic-bezier(.33,1,.68,1)}
+33.3333%,100%{transform:perspective(600px) rotateY(360deg)}
+}
+@keyframes rpg-d20-metal-fade{
+0%,6.6667%{opacity:0}
+13.3333%,46.6667%{opacity:1}
+66.6667%,100%{opacity:0}
+}
+@media screen{
+html[data-mode=character] .brand .rpg-logo{display:block;position:relative;width:min(180px,calc(var(--sidebar) - 24px));aspect-ratio:1;flex-shrink:0;line-height:0;transform-origin:center}
+html[data-mode=character] .brand .rpg-logo .brand-mark{display:block;width:100%;height:100%}
+html[data-mode=character] .brand .rpg-logo .metal-front{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:contain;opacity:0;pointer-events:none}
+html[data-mode=character][data-rpg-logo-intro=play] .rpg-logo{animation:rpg-d20-metal-spin 6s linear 1}
+html[data-mode=character][data-rpg-logo-intro=play] .rpg-logo .metal-front{animation:rpg-d20-metal-fade 6s linear 1}
+@media(max-width:620px){html[data-mode=character] .brand .rpg-logo{width:64px}}
+@media(max-width:370px){html[data-mode=character] .brand .rpg-logo{width:52px}}
+@media(prefers-reduced-motion:reduce){html[data-mode=character][data-rpg-logo-intro=play] .rpg-logo,html[data-mode=character][data-rpg-logo-intro=play] .rpg-logo .metal-front{animation:none}}
+@media(forced-colors:active){html[data-mode=character] .rpg-logo .metal-front{display:none}}
+}
+
+/* A brief terminal greeting on the first deliberate Recruiter activation. */
+@media screen{
+html[data-mode=recruiter] .terminal-cursor{animation:none;opacity:0}
+html[data-mode=recruiter][data-recruiter-logo-intro=play] .terminal-cursor{animation:terminal-caret-blink 1.2s step-end 3}
+@media(prefers-reduced-motion:reduce){html[data-mode=recruiter][data-recruiter-logo-intro=play] .terminal-cursor{animation:none}}
+}
+
+/* Approved strengths: meaningful headings with supporting descriptions below. */
+@media screen{
+html[data-mode=character] .ability-grid{grid-template-columns:1fr;gap:12px}
+html[data-mode=character] .ability-grid>.ability-row{display:grid;grid-template-columns:46px minmax(0,1fr);align-items:start;gap:12px;min-height:0;padding:0 0 12px;border:0;border-bottom:1px solid var(--line);background:transparent;outline:0;clip-path:none}
+html[data-mode=character] .ability-grid>.ability-row:last-child{border-bottom:0;padding-bottom:0}
+html[data-mode=character] .ability-grid>.ability-row>small{grid-row:auto;min-height:46px;display:grid;place-items:center;padding:8px 2px;font-size:16px}
+html[data-mode=character] .ability-grid .ability-copy{min-width:0}
+html[data-mode=character] .ability-grid strong{display:block;font:small-caps 19px/1.35 Georgia,serif;border:0;background:transparent;padding:0;margin:0 0 7px;color:var(--ink);overflow-wrap:normal}
+html[data-mode=character] .ability-grid .ability-copy p{font:12px/1.65 system-ui,sans-serif;color:var(--muted);margin:0}
+html[data-mode=recruiter] .ability-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+html[data-mode=recruiter] .ability-grid>.ability-row{display:block;min-height:0;padding:16px;text-align:left}
+html[data-mode=recruiter] .ability-grid>.ability-row>small{display:none}
+html[data-mode=recruiter] .ability-grid .ability-copy{min-width:0}
+html[data-mode=recruiter] .ability-grid strong{display:block;font:600 15px/1.4 system-ui,sans-serif;margin:0 0 9px;padding:0}
+html[data-mode=recruiter] .ability-grid .ability-copy p{font:12px/1.65 system-ui,sans-serif;color:var(--muted);margin:0}
+@media(max-width:620px){html[data-mode=recruiter] .ability-grid{grid-template-columns:1fr}html[data-mode=character] .ability-grid>.ability-row{grid-template-columns:40px minmax(0,1fr);gap:10px}html[data-mode=character] .ability-grid strong{font-size:18px}html[data-mode=character] .ability-grid>.ability-row>small{min-height:40px;font-size:14px}}
+}
+
+/* RPG proficiencies: illustrated amber tiles with a content-height panel. */
+.competency-grid>div>.rpg-skill-icon{display:none}
+@media screen{
+html[data-mode=character] .competencies{align-self:start}
+html[data-mode=character] .competency-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;text-align:center}
+html[data-mode=character] .competency-grid>div{min-width:0;padding:18px 10px 16px;border:1px solid #927046;outline:1px solid #a17e4922;outline-offset:-4px;background:linear-gradient(140deg,#6d50291c,#17292b);font:small-caps 16px/1.45 Georgia,serif;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;min-height:145px}
+html[data-mode=character] .competency-grid>div:before{display:none}
+html[data-mode=character] .competency-grid>div>.rpg-skill-icon{display:block;flex:none;width:38px;height:38px;margin:0 0 12px;color:#e8b777;font-size:0}
+html[data-mode=character] .rpg-skill-icon svg{display:block;width:100%;height:100%}
+html[data-mode=character] .competency-grid small{font:11px/1.5 system-ui,sans-serif;margin-top:4px;color:var(--muted)}
+html[data-mode=character] .competencies .tool-tags{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);gap:7px}
+@media(max-width:620px){html[data-mode=character] .competency-grid{gap:10px}html[data-mode=character] .competency-grid>div{padding:15px 8px;min-height:140px;font-size:15px}}
+@media(max-width:370px){html[data-mode=character] .competency-grid{grid-template-columns:1fr}}
+}
+
+/* Approved open proficiency grid: amber fantasy motifs with concrete tool labels. */
+.rpg-proficiency-grid{display:none}
+@media screen{
+html[data-mode=character] .competencies{align-self:start}
+html[data-mode=character] .competencies .recruiter-competencies,html[data-mode=character] .competencies .recruiter-tool-tags{display:none}
+html[data-mode=character] .rpg-proficiency-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 18px;padding:8px 0 4px}
+html[data-mode=character] .rpg-proficiency{display:flex;flex-direction:column;align-items:center;text-align:center;padding:20px 0 24px;border:0;position:relative;min-width:0;background:none}
+html[data-mode=character] .rpg-proficiency:not(:nth-last-child(-n+3)):after{content:'';position:absolute;bottom:0;left:14%;right:14%;height:1px;background:#9a795433}
+html[data-mode=character] .rpg-proficiency svg{display:block;flex:none;width:38px;height:38px;color:#e8b777;margin-bottom:15px}
+html[data-mode=character] .rpg-proficiency h3{font:16px/1.4 Georgia,serif;color:#f2e8d6;margin:0 0 7px;overflow-wrap:normal}
+html[data-mode=character] .rpg-proficiency p{font:11px/1.55 system-ui,sans-serif;color:var(--muted);margin:0}
+@media(max-width:1150px){html[data-mode=character] .rpg-proficiency-grid{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:15px}html[data-mode=character] .rpg-proficiency:after{display:none}html[data-mode=character] .rpg-proficiency:not(:nth-last-child(-n+2)):after{display:block}}
+@media(max-width:850px){html[data-mode=character] .rpg-proficiency-grid{grid-template-columns:repeat(3,minmax(0,1fr))}html[data-mode=character] .rpg-proficiency:not(:nth-last-child(-n+2)):after{display:none}html[data-mode=character] .rpg-proficiency:not(:nth-last-child(-n+3)):after{display:block}}
+@media(max-width:620px){html[data-mode=character] .rpg-proficiency-grid{grid-template-columns:repeat(2,minmax(0,1fr))}html[data-mode=character] .rpg-proficiency:not(:nth-last-child(-n+3)):after{display:none}html[data-mode=character] .rpg-proficiency:not(:nth-last-child(-n+2)):after{display:block}}
+@media(max-width:370px){html[data-mode=character] .rpg-proficiency-grid{grid-template-columns:1fr}html[data-mode=character] .rpg-proficiency:not(:last-child):after{display:block}}
+}
+
+/* Recruiter counterpart to the approved RPG grid: same content, business symbols. */
+.recruiter-proficiency-grid{display:none}
+@media screen{
+html[data-mode=recruiter] .competencies{align-self:start}
+html[data-mode=recruiter] .recruiter-proficiency-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 18px;padding:8px 0 4px}
+html[data-mode=recruiter] .recruiter-proficiency{display:flex;flex-direction:column;align-items:center;text-align:center;padding:20px 0 24px;border:0;position:relative;min-width:0;background:none}
+html[data-mode=recruiter] .recruiter-proficiency:not(:nth-last-child(-n+3)):after{content:'';position:absolute;bottom:0;left:14%;right:14%;height:1px;background:#83d1cc22}
+html[data-mode=recruiter] .recruiter-proficiency svg{display:block;flex:none;width:38px;height:38px;color:#83d1cc;margin-bottom:15px}
+html[data-mode=recruiter] .recruiter-proficiency h3{font:500 16px/1.4 system-ui,sans-serif;color:var(--ink);margin:0 0 7px;overflow-wrap:normal;letter-spacing:0}
+html[data-mode=recruiter] .recruiter-proficiency p{font:11px/1.55 system-ui,sans-serif;color:var(--muted);margin:0}
+@media(max-width:1150px){html[data-mode=recruiter] .recruiter-proficiency-grid{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:15px}html[data-mode=recruiter] .recruiter-proficiency:after{display:none}html[data-mode=recruiter] .recruiter-proficiency:not(:nth-last-child(-n+2)):after{display:block}}
+@media(max-width:850px){html[data-mode=recruiter] .recruiter-proficiency-grid{grid-template-columns:repeat(3,minmax(0,1fr))}html[data-mode=recruiter] .recruiter-proficiency:not(:nth-last-child(-n+2)):after{display:none}html[data-mode=recruiter] .recruiter-proficiency:not(:nth-last-child(-n+3)):after{display:block}}
+@media(max-width:620px){html[data-mode=recruiter] .recruiter-proficiency-grid{grid-template-columns:repeat(2,minmax(0,1fr))}html[data-mode=recruiter] .recruiter-proficiency:not(:nth-last-child(-n+3)):after{display:none}html[data-mode=recruiter] .recruiter-proficiency:not(:nth-last-child(-n+2)):after{display:block}}
+@media(max-width:370px){html[data-mode=recruiter] .recruiter-proficiency-grid{grid-template-columns:1fr}html[data-mode=recruiter] .recruiter-proficiency:not(:last-child):after{display:block}}
+}
+@media print{html[data-mode=character] .rpg-proficiency-grid,html[data-mode=recruiter] .recruiter-proficiency-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.rpg-proficiency svg,.recruiter-proficiency svg{width:24px;height:24px}.rpg-proficiency h3,.recruiter-proficiency h3{font-size:11pt}.rpg-proficiency p,.recruiter-proficiency p{font-size:9pt}}
+
+/* Approved two-column profile: larger portrait, a single introduction and wider fields. */
+@media screen{
+html[data-mode] .hero-grid{grid-template-columns:minmax(180px,.29fr) minmax(0,1fr);gap:40px;padding:32px;align-items:center}
+html[data-mode] .hero-grid .identity-art.portrait{width:100%;max-width:290px;aspect-ratio:29/41;align-self:center;justify-self:center}
+html[data-mode] .hero-grid .hero-copy{min-width:0;width:100%;align-self:center}
+html[data-mode] .hero-grid h1{font-size:clamp(33px,4.4vw,62px);line-height:1.08}
+html[data-mode] .hero-grid .role-title{font-size:20px;line-height:1.4;margin-bottom:16px}
+html[data-mode] .hero-grid .intro{font-size:16px;line-height:1.6;max-width:900px}
+html[data-mode] .hero-grid .actions{margin:24px 0 30px;gap:28px;align-items:center}
+html[data-mode] .hero-grid .actions .button{display:inline-flex;flex:0 0 auto;width:max-content;max-width:100%;padding:12px 20px;gap:0;font-size:13px;line-height:1.5;text-align:center}
+html[data-mode] .hero-grid .actions .text-link{font-size:13px;line-height:1.5}
+html[data-mode] .hero-grid .record-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 32px;margin:0}
+html[data-mode] .hero-grid .record-fields>div{min-width:0}
+html[data-mode] .hero-grid .record-fields dd{font-size:18px;line-height:1.45;padding-bottom:8px}
+html[data-mode] .hero-grid .record-fields dt{font-size:9px;line-height:1.5;letter-spacing:1px}
+@media(max-width:1150px){html[data-mode] .hero-grid{grid-template-columns:180px minmax(0,1fr);gap:28px;padding:24px}html[data-mode] .hero-grid .record-fields dd{font-size:16px}}
+@media(max-width:850px){html[data-mode] .hero-grid{grid-template-columns:1fr;gap:28px}html[data-mode] .hero-grid .identity-art.portrait{max-width:230px}html[data-mode] .hero-grid h1{font-size:42px}}
+@media(max-width:620px){html[data-mode] .hero-grid{padding:24px 18px}html[data-mode] .hero-grid .identity-art.portrait{max-width:210px}html[data-mode] .hero-grid h1{font-size:37px}html[data-mode] .hero-grid .role-title{font-size:17px}html[data-mode] .hero-grid .intro{font-size:14px}html[data-mode] .hero-grid .record-fields{gap:20px}html[data-mode] .hero-grid .record-fields dd{font-size:15px}html[data-mode] .hero-grid .actions{gap:18px}}
+@media(max-width:370px){html[data-mode] .hero-grid .record-fields{grid-template-columns:1fr}html[data-mode] .hero-grid .hero-copy{text-align:left}html[data-mode] .hero-grid .actions{justify-content:flex-start}}
+}
+
+/* Destination headings match the sidebar's names; expressive copy is a subtitle. */
+.navigation-heading{margin-bottom:14px}
+.section-subtitle{font:22px/1.45 var(--serif);color:var(--muted);margin:0 0 24px}
+html[data-mode] .hero-grid .navigation-heading{font:600 14px/1.5 system-ui,sans-serif;letter-spacing:1.3px;text-transform:uppercase;color:var(--accent);margin:0 0 8px}
+.experience-section .experience{margin-top:0}
+.about .section-subtitle{font-size:25px;color:var(--muted)}
+.contact .section-subtitle{font-size:24px;max-width:650px;margin:0 auto 22px}
+@media(max-width:620px){.section-subtitle,.about .section-subtitle,.contact .section-subtitle{font-size:20px}}
+
+/* Recruiter summary uses the same surface and heading treatment as its peers. */
+@media screen{
+html[data-mode=recruiter] .panel.backstory{background:var(--panel);border-color:var(--line);color:var(--ink)}
+html[data-mode=recruiter] .panel.backstory h2{color:var(--accent);border-color:var(--line)}
+html[data-mode=recruiter] .panel.backstory p{color:var(--muted);font:12px/1.65 system-ui,sans-serif}
+}
+
+/* Recruiter primary action coordinates with its teal theme. */
+@media screen{
+html[data-mode=recruiter] .hero-grid .actions .button{background:linear-gradient(135deg,#326761,#254d4b);border-color:#62a7a1;color:#eef9f4}
+html[data-mode=recruiter] .hero-grid .actions .button:hover{background:#326761;border-color:#83d1cc}
+@media(forced-colors:active){html[data-mode=recruiter] .hero-grid .actions .button{background:ButtonFace;border-color:ButtonText;color:ButtonText}}
+}
