@@ -217,3 +217,21 @@ The résumé page now uses black text on a white background with Helvetica and A
 ## Complete technical résumé
 
 The résumé page now contains the full supplied Miles Storm Technical Engineering Resume: professional summary, core strengths, five detailed roles (GoDaddy, The Brandt Companies, City of Tyler, Tyler Junior College, and Livewire PC Repair), technologies, education, and certifications. All source responsibilities, metrics, and dates are retained, with team SLA metrics still identified as team performance. Contact details include the supplied LinkedIn URL. The uploaded document is the source for this page, including the June 2026 GoDaddy end date and ACMT credential. Helvetica, black-on-white presentation, and print controls remain. Other portfolio sections have not been rewritten from this résumé.
+
+The Contact section includes a direct LinkedIn text link beneath the phone number, using the current mode’s accent color and the LinkedIn URL supplied in the technical résumé.
+
+## Social link and pronoun placement
+
+The line above the banner now links to LinkedIn. Pronouns (they/them) appear subtly beside Miles Storm in the profile name, wrapping naturally on narrow screens. Location remains in the profile fields. Both modes retain their own accent colors; the Contact section’s LinkedIn link remains available.
+
+## LinkedIn icon and tooltip
+
+The social link above the banner now uses a single-color LinkedIn icon in the current theme accent, with a thin border and 3.5px padding matching the approved preview. A LinkedIn tooltip appears on mouse hover or keyboard focus. The link has a screen-reader label and visible keyboard focus; it keeps the existing profile URL. The Contact LinkedIn link remains text.
+
+
+## Hidden arcade: Glass Cannon
+The π immediately to the left of the footer copyright opens `game/index.html`. It matches the footer background at rest and becomes white on hover or keyboard focus. It has an accessible link name and supports touch. The game stays on its own page, so music only starts after entering the dungeon. A Return to portfolio link is in the game's side panel.
+
+Publish the entire contents of this folder to the GitHub Pages repository, including the `game` folder and all files inside its `assets` and `audio` folders. No server, account, paid hosting, or build step is required. Game music attribution is in its footer and `game/MUSIC-CREDITS.txt`.
+
+The easter egg is hidden for discovery, not password-protected; visitors can share its URL or find it in the page source. The standalone game demo is retained separately for further edits.

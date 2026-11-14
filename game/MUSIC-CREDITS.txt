@@ -1,0 +1,22 @@
+GLASS CANNON MUSIC CREDITS
+
+DarxieLand — Kevin MacLeod (incompetech.com)
+Licensed under Creative Commons Attribution 4.0 International (CC BY 4.0).
+https://creativecommons.org/licenses/by/4.0/
+Track: https://incompetech.com/music/royalty-free/index.html?Search=Search&isrc=USUAN1600059
+Download: https://incompetech.com/music/royalty-free/mp3-royaltyfree/DarxieLand.mp3
+Edited by Miles Storm / Glass Cannon demo: mono mix, bass/treble roll-off, midrange EQ, mild soft saturation, limiting, and MP3 re-encoding to evoke a 1990s computer speaker. Repeating gameplay playback with runtime volume adjustment.
+
+Heavy Battle 1 — MintoDog
+CC0 1.0 Universal: https://creativecommons.org/publicdomain/zero/1.0/
+Track: https://opengameart.org/content/heavy-battle-1
+Download: https://opengameart.org/sites/default/files/heavy_battle_1_bpm190.mp3
+Edited with the same vintage-speaker processing and MP3 re-encoding. Repeating boss-fight playback with runtime volume adjustment.
+
+Game Over Instrumental — Samza
+CC0 1.0 Universal: https://creativecommons.org/publicdomain/zero/1.0/
+Track: https://opengameart.org/content/game-over-instrumental
+Download: https://opengameart.org/sites/default/files/death_0.wav
+Converted from WAV to MP3 with the same vintage-speaker processing. Complete 14-second cue plays once after GAME OVER. Runtime volume adjustment.
+
+The audio files are bundled locally. No third-party streaming requests are made during play. Music credits also appear in the game footer.
