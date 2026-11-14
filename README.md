@@ -235,3 +235,5 @@ The π immediately to the left of the footer copyright opens `game/index.html`. 
 Publish the entire contents of this folder to the GitHub Pages repository, including the `game` folder and all files inside its `assets` and `audio` folders. No server, account, paid hosting, or build step is required. Game music attribution is in its footer and `game/MUSIC-CREDITS.txt`.
 
 The easter egg is hidden for discovery, not password-protected; visitors can share its URL or find it in the page source. The standalone game demo is retained separately for further edits.
+
+The bundled game now uses release controls: demo/practice buttons removed; music and sound effects have independent toggles, with Pause and Restart retained.
