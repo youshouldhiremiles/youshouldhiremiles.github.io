@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="880" viewBox="0 0 720 880" fill="none" stroke="#e8b777" stroke-linecap="round" stroke-linejoin="round">
+  <defs>
+    <g id="fork" stroke-width="1.8"><path d="M0-25V25M-13-16 0-3 13-16M-9 17 0 8 9 17"/></g>
+    <g id="gate" stroke-width="1.7"><path d="M-16 22V-19L0-29 16-19V22M-16-3H16M-8 22V9H8V22"/></g>
+    <g id="spark" stroke-width="1.5"><path d="M0-26 6-7 24 0 6 7 0 26-6 7-24 0-6-7Z M0-10V10M-9 0H9"/></g>
+    <g id="branch" stroke-width="1.7"><path d="M-13 23 13-23M-7 12 10 10M-1 1-12-13M6-12 21-11M-13 23H2"/></g>
+    <g id="diamond" stroke-width="1.6"><path d="M0-28 16 0 0 28-16 0ZM0-28V28M-16 0H16M-24-16-15-12M24 16 15 12"/></g>
+  </defs>
+  <g transform="translate(170 210) rotate(-14)">
+    <circle r="142" stroke-width=".8" opacity=".7"/><circle r="127" stroke-width="1.2"/><circle r="116" stroke-width=".7" opacity=".6"/>
+    <path d="M0-103 89 51H-89ZM0 103-89-51H89Z" stroke-width=".8" opacity=".5"/>
+    <circle r="48" stroke-width=".9"/><circle r="40" stroke-dasharray="1 8" stroke-width="2"/>
+    <use href="#spark"/>
+    <use href="#fork" transform="translate(0 -91) scale(.65)"/>
+    <use href="#gate" transform="translate(79 -45) rotate(60) scale(.65)"/>
+    <use href="#diamond" transform="translate(79 45) rotate(120) scale(.65)"/>
+    <use href="#branch" transform="translate(0 91) rotate(180) scale(.65)"/>
+    <use href="#fork" transform="translate(-79 45) rotate(240) scale(.65)"/>
+    <use href="#gate" transform="translate(-79 -45) rotate(300) scale(.65)"/>
+    <path d="M0-154V-135M154 0H135M0 154V135M-154 0H-135" stroke-width="1.5"/>
+  </g>
+  <g transform="translate(563 612) rotate(24)">
+    <circle r="108" stroke-width="1"/><circle r="96" stroke-width=".7" stroke-dasharray="3 7"/>
+    <path d="M0-80 76-25 47 65-47 65-76-25Z M0-80 47 65-76-25H76L-47 65Z" stroke-width=".8" opacity=".6"/>
+    <use href="#diamond"/>
+    <use href="#branch" transform="translate(0 -131) scale(.7)"/>
+    <use href="#spark" transform="translate(131 0) scale(.6)"/>
+    <use href="#gate" transform="translate(0 133) scale(.7)"/>
+    <use href="#fork" transform="translate(-131 0) scale(.7)"/>
+  </g>
+  <g stroke-width=".7" opacity=".5"><path d="M334 65H419L445 91V166M332 814H261L238 791V737M42 442V481L66 505H127M501 349H600L632 381V413"/><circle cx="334" cy="65" r="3"/><circle cx="127" cy="505" r="3"/><circle cx="501" cy="349" r="3"/></g>
+  <g opacity=".8"><use href="#branch" transform="translate(528 138) rotate(17)"/><use href="#gate" transform="translate(343 433) rotate(-12) scale(.8)"/><use href="#fork" transform="translate(128 671) rotate(15)"/><use href="#spark" transform="translate(392 795) scale(.7)"/><use href="#diamond" transform="translate(660 310) scale(.7)"/></g>
+</svg>

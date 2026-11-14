@@ -15,3 +15,8 @@ A boss appears every fifth stage, rotating through all five enemy archetypes. Bo
 
 RELEASE INTERFACE
 Practice, preview, and cheat buttons have been removed. Only Pause, Restart, normal touch controls, and audio controls remain. Automated gameplay and independent-audio-toggle checks passed. Browser inspection confirmed the cleaned interface and muting effects while music remains enabled.
+
+RESPONSIVE INSTRUCTIONS
+The instruction panel scales its width, type, and spacing with the viewport and stays beside the portrait game. Its height is capped to the window with independent scrolling. It is keyboard-focusable, and arrow keys scroll the focused panel instead of moving the wizard. Browser checks at desktop and narrow viewport sizes confirmed side-by-side placement, bounded panel height, and no horizontal page overflow.
+
+The game page now shares the RPG portfolio's stationary arcane rune background. The decorative layer is non-interactive and hidden from assistive technology, with the same subtle opacity and smaller-screen sizing.
