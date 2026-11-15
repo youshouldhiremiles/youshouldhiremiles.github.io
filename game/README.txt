@@ -16,7 +16,7 @@ A boss appears every fifth stage, rotating through all five enemy archetypes. Bo
 RELEASE INTERFACE
 Practice, preview, and cheat buttons have been removed. Only Pause, Restart, normal touch controls, and audio controls remain. Automated gameplay and independent-audio-toggle checks passed. Browser inspection confirmed the cleaned interface and muting effects while music remains enabled.
 
-RESPONSIVE INSTRUCTIONS
-The instruction panel scales its width, type, and spacing with the viewport and stays beside the portrait game. Its height is capped to the window with independent scrolling. It is keyboard-focusable, and arrow keys scroll the focused panel instead of moving the wizard. Browser checks at desktop and narrow viewport sizes confirmed side-by-side placement, bounded panel height, and no horizontal page overflow.
-
-The game page now shares the RPG portfolio's stationary arcane rune background. The decorative layer is non-interactive and hidden from assistive technology, with the same subtle opacity and smaller-screen sizing.
+MOBILE LAYOUT AND FULLSCREEN
+The cabinet and play controls are above all instructions and audio settings. Sizing uses the visual viewport so mobile browser bars and orientation changes are reflected without stretching the 3:4 playfield. Safe-area padding accommodates device cutouts. Drag controls and touch buttons stay with the game in fullscreen.
+Fullscreen uses the browser API when available; otherwise a fixed expanded view fills the available browser window. Exit fullscreen returns to the normal page; Escape also exits the fallback. Native fullscreen availability varies by browser, especially on phones. Portrait orientation gives the largest playfield; landscape retains the portrait game aspect ratio.
+Checks passed: gameplay regressions, independent audio controls, viewport fit math, fullscreen native/failure/fallback paths, HTML structure, and responsive browser checks at phone portrait, landscape, and desktop dimensions. Browser inspection confirmed instructions below the game, no horizontal overflow, and a 3:4 playfield. The in-app browser verified expanded-view entry/exit; native fullscreen was tested with a mock, not on physical mobile devices.
